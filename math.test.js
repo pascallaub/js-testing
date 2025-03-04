@@ -23,6 +23,15 @@ describe('Addition Function', () => {
     test('should handle non-number inputs', () => {
         expect(addition('a', 2)).toBe(undefined);
     });
+    test('should handle more than two inputs', () => {
+        expect(addition(1, 2, 3)).toBe(undefined);
+    });
+    test('should handle only one input', () => {
+        expect(addition(1)).toBe(undefined);
+    });
+    test('should handle no inputs', () => {
+        expect(addition()).toBe(undefined);
+    });
 });
 
 describe('Subtraction Function', () => {
@@ -43,5 +52,14 @@ describe('Subtraction Function', () => {
     });
     test('should handle non-number inputs', () => {
         expect(subtract('a', 2)).toBe(undefined);
+    });
+    test('should handle more than two inputs', () => {
+        expect(subtract(1, 2, 3)).toBe(undefined);
+    });
+    test('should handle only one input', () => {
+        expect(subtract(1)).toBe(undefined);
+    });
+    test('should handle no inputs', () => {
+        expect(subtract()).toBe(undefined);
     });
 });

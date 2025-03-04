@@ -1,6 +1,6 @@
 function addition(a, b) {
     try {
-        if (typeof a !== 'number' || typeof b !== 'number') {
+        if (typeof a !== 'number' || typeof b !== 'number' || arguments.length !== 2) {
             throw new Error('Invalid input');
         }
         return a + b;
@@ -12,7 +12,7 @@ function addition(a, b) {
 
 function subtract(a, b) {
     try {
-        if (typeof a !== 'number' || typeof b !== 'number') {
+        if (typeof a !== 'number' || typeof b !== 'number' || arguments.length !== 2) {
             throw new Error('Invalid input');
         }
         return a - b;
